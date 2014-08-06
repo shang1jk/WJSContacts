@@ -5,6 +5,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.Window;
 
+import com.avos.avoscloud.AVAnalytics;
+
 public abstract class BaseActivity extends Activity {
 	protected MApplication app;
 	
@@ -26,5 +28,18 @@ public abstract class BaseActivity extends Activity {
 	protected abstract void beforeInitView();
 	protected abstract void initView();
 	protected abstract void afterInitView();
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		AVAnalytics.onResume(this);
+	}
+	
+	@Override
+	protected void onPause() {
+		super.onPause();
+		AVAnalytics.onPause(this);
+	}
+	
 
 }
