@@ -1,10 +1,14 @@
+gen
+bin
 *.class
+.classpath
+.project
+.settings/org.eclipse.jdt.core.prefs
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
 
@@ -50,3 +54,4 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+

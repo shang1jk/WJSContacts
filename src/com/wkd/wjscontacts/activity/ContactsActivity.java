@@ -1,6 +1,6 @@
-package com.wkd.wjscontacts;
+package com.wkd.wjscontacts.activity;
 
-public class IndexActivity extends BaseActivity{
+public class ContactsActivity extends BaseActivity{
 
 	@Override
 	protected void setContentLayout() {

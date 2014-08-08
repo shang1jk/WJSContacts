@@ -1,4 +1,4 @@
-package com.wkd.wjscontacts;
+package com.wkd.wjscontacts.activity;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.avos.avoscloud.AVAnalytics;
+import com.wkd.wjscontacts.MApplication;
 
 public abstract class BaseActivity extends Activity {
 	protected MApplication app;
